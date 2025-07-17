@@ -1,11 +1,8 @@
-# weather2_keyboard.py
+with open("input_multiple.txt", "r") as f:
+    for line in f:
+        a, b, c, x = map(float, line.strip().split())
+        y = a * x**2 + b * x + c
+        print(f"Input: a={a}, b={b}, c={c}, x={x} → Predicted y = {y}")
 
-a = float(input("Enter coefficient a: "))
-b = float(input("Enter coefficient b: "))
-c = float(input("Enter coefficient c: "))
-x = float(input("Enter the day (x): "))
-
-y = a * x**2 + b * x + c
-print(f"Predicted weather value for day {x} is: {y}")
 
 
